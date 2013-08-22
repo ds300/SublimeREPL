@@ -56,6 +56,7 @@ def ruby_sender(repl, text, view=None):
 def clojure_sender(repl, text, view):
     return default_sender(repl, text, view)
 
+
 class ReplViewWrite(sublime_plugin.TextCommand):
     def run(self, edit, external_id, text):
         for rv in manager.find_repl(external_id):
